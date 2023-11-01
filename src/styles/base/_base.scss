@@ -1,0 +1,22 @@
+body {
+    background: url("../../assets/fondo.jpg");
+    background-repeat: repeat;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    img {
+        width: 60vw;
+    }
+}
+
+a:visited {
+    color: red;
+}
+a:link {
+    color: white;
+}
+a:hover {
+    color: blue;
+}

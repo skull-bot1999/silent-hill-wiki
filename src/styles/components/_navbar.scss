@@ -1,0 +1,42 @@
+.menu-bar {
+    list-style: none;
+    margin: auto;
+
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        cursor: pointer;
+        .item-container {
+            position: relative;
+            height: 50px;
+            width: 200px;
+            img {
+                position: absolute;
+                transition: opacity 0.5s ease-in-out;
+                &.top:hover {
+                    transition: opacity 0.5s ease-in-out;
+                    opacity: 0;
+                }
+            }
+        }
+
+        a {
+            display: block;
+        }
+        ul {
+            display: none;
+        }
+        &:hover > ul {
+            display: block;
+        }
+    }
+
+    & > li {
+        float: left;
+        position: relative;
+    }
+}
