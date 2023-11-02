@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 
 export default function Home() {
@@ -5,7 +6,7 @@ export default function Home() {
         <>
             <Header />
             <section>
-                <div className="format0">
+                {/* <div className="format0">
                     Inicio
                     <hr />
                     <div className="format6">
@@ -197,16 +198,9 @@ export default function Home() {
                             </div>
                         </center>
                     </div>
-                </div>
+                </div> */}
             </section>
-            <footer>
-                <div className="footer">
-                    <img
-                        src="Imagenes creadas\footer\footer.gif"
-                        className="ajustarfooter"
-                    />
-                </div>
-            </footer>
+            <Footer />
         </>
     );
 }

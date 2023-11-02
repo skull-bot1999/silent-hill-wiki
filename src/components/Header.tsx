@@ -58,20 +58,7 @@ export const Header = () => {
                                 />
                             </ul>
                         </NavItem>
-                        <NavItem image={Monsters} hoverImage={MonstersHover}>
-                            <ul>
-                                <NavItem
-                                    href="/monsters/normal"
-                                    image={BasicMonsters}
-                                    hoverImage={BasicMonstersHover}
-                                />
-                                <NavItem
-                                    href="/monsters/bosses"
-                                    image={BossMonsters}
-                                    hoverImage={BossMonstersHover}
-                                />
-                            </ul>
-                        </NavItem>
+
                         <NavItem image={Content} hoverImage={ContentHover}>
                             <ul>
                                 <NavItem

@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,6 +18,8 @@ export const NavItem = ({
     href,
     children,
 }: PropsWithChildren<NavItemProps>) => {
+    const [isShowingChildren, setIsShowingChildren] = useState(false);
+
     const Images = () => (
         <>
             <Image alt="lore hover" src={hoverImage} />
@@ -23,7 +28,7 @@ export const NavItem = ({
     );
 
     return (
-        <li>
+        <li onClick={() => setIsShowingChildren((value) => !value)}>
             <div className="item-container">
                 {href ? (
                     <Link href={href}>
@@ -33,7 +38,8 @@ export const NavItem = ({
                     <Images />
                 )}
             </div>
-            {children}
+
+            {isShowingChildren && children}
         </li>
     );
 };

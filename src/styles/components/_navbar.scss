@@ -16,21 +16,15 @@
             width: 200px;
             img {
                 position: absolute;
-                transition: opacity 0.5s ease-in-out;
+                transition: opacity 0.2s ease-in-out;
                 &.top:hover {
-                    transition: opacity 0.5s ease-in-out;
+                    transition: opacity 0.2s ease-in-out;
                     opacity: 0;
                 }
             }
         }
 
         a {
-            display: block;
-        }
-        ul {
-            display: none;
-        }
-        &:hover > ul {
             display: block;
         }
     }
