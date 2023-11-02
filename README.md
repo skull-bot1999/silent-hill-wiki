@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Silent Hill Wiki
+Esta es una wiki de Silent Hill. Está conectada a una base de datos MongoDB a través de Node.js y Express.js en el backend, utilizando API para obtener los datos necesarios. La plataforma ha sido desarrollada utilizando tecnologías modernas como React.js, Next.js y Tailwind, entre otras, para ofrecer una experiencia sólida y eficiente. Es un remake de una pagina que hice en 2018 como proyecto, antes era solo HTML y CSS.
 
-## Getting Started
+## Tecnologias utilizadas
+- Typescript
+- Next.js
+- React.js
+- Node.js
+- Express.js
+- Tailwind
+- Sass
+- MongoDB
 
-First, run the development server:
+## Licencia
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Derechos de Autor del Código Fuente y las Imágenes**: El código fuente de este proyecto se proporciona bajo la licencia MIT, lo que permite su uso y modificación con ciertas restricciones. Sin embargo, ten en cuenta que las imágenes utilizadas en este proyecto (banner, footer y botones de navegación) son creaciones originales y están protegidas por derechos de autor. No están bajo la misma licencia que el código fuente.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Restricciones de Redistribución**: No tienes permiso para redistribuir este proyecto web en su totalidad o en parte en otros repositorios de GitHub u otras plataformas de código abierto como si fuera de tu autoría. Si deseas colaborar o utilizar el código fuente, te invitamos a hacerlo siguiendo los términos de la licencia mencionada y a respetar los derechos de autor de las imágenes. Para cualquier pregunta o solicitud adicional, por favor, contáctame.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Visualización para Reclutadores**: Este repositorio está configurado como público para que los reclutadores y posibles empleadores puedan ver mi trabajo y proyectos relacionados. Agradezco su interés y su consideración en mi desarrollo profesional.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Datos de la Fuente Original**: Los datos y el contenido presentados en esta wiki se han recopilado de diversas fuentes, siendo la principal fuente de referencia Silent Hill Wiki(https://silenthill.fandom.com/). Esta wiki se ha creado con el propósito de proporcionar una plataforma organizada y accesible para presentar información relacionada con Silent Hill.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Derechos de Autor de la Fuente Original**: Los derechos de autor y atribución de los datos originales contenidos en esta wiki pertenecen a Silent Hill Wiki (https://silenthill.fandom.com/) y a sus respectivos autores. Se ha hecho un esfuerzo por proporcionar atribución y referencias adecuadas siempre que sea posible. Si tienes alguna pregunta o inquietud sobre los datos específicos presentados en la wiki, te recomiendo consultar directamente Silent Hill Wiki (https://silenthill.fandom.com/).
