@@ -1,14 +1,12 @@
+* {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 body {
     background: url("../../assets/fondo.jpg");
     background-repeat: repeat;
-}
-
-header {
-    display: flex;
-    justify-content: center;
-    img {
-        width: 60vw;
-    }
+    background-size: 10rem;
+    height: 100vh;
 }
 
 footer {
@@ -24,18 +22,12 @@ footer {
     justify-content: center;
     align-items: flex-end;
     height: 300px;
+    width: 100%;
     img {
         width: 50%;
         height: auto;
+        @media (max-width: 768px) {
+            width: 80%;
+        }
     }
-}
-
-a:visited {
-    color: red;
-}
-a:link {
-    color: white;
-}
-a:hover {
-    color: blue;
 }

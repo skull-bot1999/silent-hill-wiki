@@ -1,45 +1,29 @@
 "use client";
-
 import { useState } from "react";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import Image from "next/image";
 import Link from "next/link";
 import { PropsWithChildren } from "react";
 
 type NavItemProps = {
-    image: StaticImport;
-    hoverImage: StaticImport;
+    text: string;
     href?: string;
+    className?: string;
 };
 
 export const NavItem = ({
-    image,
-    hoverImage,
+    text,
     href,
     children,
+    className,
 }: PropsWithChildren<NavItemProps>) => {
     const [isShowingChildren, setIsShowingChildren] = useState(false);
 
-    const Images = () => (
-        <>
-            <Image alt="lore hover" src={hoverImage} />
-            <Image src={image} alt="lore" className="top" />
-        </>
-    );
-
     return (
-        <li onClick={() => setIsShowingChildren((value) => !value)}>
-            <div className="item-container">
-                {href ? (
-                    <Link href={href}>
-                        <Images />
-                    </Link>
-                ) : (
-                    <Images />
-                )}
-            </div>
-
+        <div
+            onClick={() => setIsShowingChildren((value) => !value)}
+            className={"nav-item " + (className ? className : "")}
+        >
+            {href ? <Link href={href}>{text}</Link> : <a>{text}</a>}
             {isShowingChildren && children}
-        </li>
+        </div>
     );
 };
