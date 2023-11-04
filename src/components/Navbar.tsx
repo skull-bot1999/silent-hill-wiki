@@ -3,11 +3,12 @@
 import { NavItem } from "./NavItem";
 import { Bars3Icon } from "@heroicons/react/20/solid";
 import { useEffect, useState } from "react";
-import useMediaQuery from "@/hooks/useMediaQuery";
 import $ from "jquery";
 import Link from "next/link";
 import Image from "next/image";
 import { Banner } from "@/assets";
+// Mis imports
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 export const Navbar = () => {
     const matches = useMediaQuery("(max-width: 768px)");

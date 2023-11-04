@@ -1,7 +1,14 @@
 export default function Home() {
     return (
         <>
-            <section>
+            <section className="flex justify-center mt-10 ">
+                <div className="bg-black w-2/3 h-fit text-white p-10 rounded-md border-red-800 border-2">
+                    <h1>Inicio</h1>
+                    <hr />
+                    Bienvenido a la wiki de Silent Hill 1
+                    <br />
+                    Aqui encontraras informacion sobre el juego
+                </div>
                 {/* <div className="format0">
                     Inicio
                     <hr />
