@@ -1,0 +1,18 @@
+.body {
+    margin: 2rem 15%;
+    border: 1px solid red;
+    width: 75%;
+    color: white;
+    background-color: $colorBlackTransparent;
+    padding: 2rem;
+    h1 {
+        font-weight: bolder;
+    }
+    h2 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    p {
+        text-indent: 1rem;
+    }
+}

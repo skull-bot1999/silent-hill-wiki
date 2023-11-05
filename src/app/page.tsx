@@ -1,13 +1,61 @@
+import Image from "next/image";
+import { TitleQuote } from "@/assets";
+
 export default function Home() {
     return (
         <>
-            <section className="flex justify-center mt-10 ">
-                <div className="bg-black w-2/3 h-fit text-white p-10 rounded-md border-red-800 border-2">
+            <section className="flex justify-center">
+                <div className="body">
                     <h1>Inicio</h1>
                     <hr />
-                    Bienvenido a la wiki de Silent Hill 1
-                    <br />
-                    Aqui encontraras informacion sobre el juego
+                    <h2 className="text-center">
+                        Bienvenido a la wiki de Silent Hill 1
+                        <br />
+                        Aqui encontraras informacion sobre el juego
+                    </h2>
+                    <div className="grid grid-cols-5 mt-5 gap-5">
+                        <div className="col-span-4 border-[1px] p-5 border-red-700">
+                            <Image
+                                className="p-6"
+                                priority
+                                src={TitleQuote}
+                                alt="quote"
+                            />
+                            <p>
+                                Silent Hill es la primera entrega de la serie de
+                                videojuegos Silent Hill, una franquicia de gran
+                                éxito de juegos de aventura y survival horror.
+                                Silent Hill fue desarrollado por{" "}
+                                <b>Team Silent</b> y publicado por <b>Konami</b>
+                                . Fue publicado para la PlayStation de Sony en
+                                Norteamérica el 31 de enero de 1999.
+                            </p>
+                            <p>
+                                Es un juego de acción y Survival Horror que
+                                cuenta con una cámara en tercera persona y
+                                entornos tridimensionales en tiempo real. El
+                                juego usa efectos de neblina y oscuridad para
+                                ocultar las limitaciones de hardware que el
+                                juego posee. Este aspecto, ha sido alabado por
+                                la crítica ya que ayuda a alimentar la atmósfera
+                                terrorífica del juego. La obra presenta a un
+                                protagonista sin cualidades especiales o
+                                destreza física por sobre lo normal, en
+                                contraste con otras entregas de Survival Horror.
+                            </p>
+                        </div>
+                        <div className="col-span-1 flex flex-col items-center">
+                            <div>
+                                <a
+                                    target="_blank"
+                                    href="https://www.konami.com/games/jp/ja/products/silenthill/"
+                                >
+                                    Pagina oficial de Silent Hill
+                                </a>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
                 </div>
                 {/* <div className="format0">
                     Inicio

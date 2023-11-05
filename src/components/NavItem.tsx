@@ -49,9 +49,9 @@ export const NavItem = ({
                 <a className="flex justify-center">
                     {text}
                     {children && isShowingChildren ? (
-                        <ChevronUpIcon width={30} />
+                        <ChevronUpIcon width={20} />
                     ) : (
-                        <ChevronDownIcon width={30} />
+                        <ChevronDownIcon width={20} />
                     )}
                 </a>
             )}
