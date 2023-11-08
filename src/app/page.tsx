@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { TitleQuote } from "@/assets";
+import { SubscribeForm } from "@/components/SubscribeForm";
 
 export default function Home() {
     return (
@@ -14,7 +15,7 @@ export default function Home() {
                         Aqui encontraras informacion sobre el juego
                     </h2>
                     <div className="grid grid-cols-5 mt-5 gap-5">
-                        <div className="col-span-4 border-[1px] p-5 border-red-700">
+                        <div className="col-span-4 border-[1px] p-5 border-red-700 flex flex-col items-center">
                             <Image
                                 className="p-6"
                                 priority
@@ -52,8 +53,11 @@ export default function Home() {
                                 >
                                     Pagina oficial de Silent Hill
                                 </a>
+                                <img src="https://ipfs.filebase.io/ipfs/QmNYbgzjoC9PChCif92bh2yw679wQvyH89X5b1V7HbkqCT"></img>
                             </div>
-                            <div></div>
+                            <div>
+                                <SubscribeForm />
+                            </div>
                         </div>
                     </div>
                 </div>
