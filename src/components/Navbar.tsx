@@ -29,11 +29,6 @@ export const Navbar = () => {
     return (
         <>
             <nav>
-                <div className="brand">
-                    <Link href="/">
-                        <Image src={Banner} alt="banner" />
-                    </Link>
-                </div>
                 {matches && (
                     <button
                         className="hamburger"
@@ -42,6 +37,11 @@ export const Navbar = () => {
                         <Bars3Icon />
                     </button>
                 )}
+                <div className="brand">
+                    <Link href="/">
+                        <Image src={Banner} alt="banner" />
+                    </Link>
+                </div>
                 {!isCollapsed && (
                     <ul className="menu-bar">
                         <NavItem href="/lore" text="Historia" />

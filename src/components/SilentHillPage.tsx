@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const SilentHillPage = () => {
     return (
-        <div className="card ">
+        <div className="card full-image">
             <a
                 className="text-center"
                 target="_blank"
@@ -10,7 +10,7 @@ export const SilentHillPage = () => {
             >
                 Pagina oficial de Silent Hill
                 <Image
-                    className="rounded-lg mt-2"
+                    className="rounded-lg mt-2 sm:w-full"
                     width={200}
                     height={200}
                     alt="silent hill"

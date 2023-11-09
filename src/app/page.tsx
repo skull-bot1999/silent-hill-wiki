@@ -15,14 +15,12 @@ export default function Home() {
                         <br />
                         Aqui encontraras informacion sobre el juego
                     </h2>
-                    <div className="grid grid-cols-5 mt-5 gap-5">
-                        <div className="col-span-4 card">
-                            <Image
-                                className="p-6"
-                                priority
-                                src={TitleQuote}
-                                alt="quote"
-                            />
+                    <div className="lg:grid grid-cols-5 mt-5 gap-5 sm:flex sm:flex-col">
+                        <div className="col-span-4 card lg:mb-0 sm:mb-5 ">
+                            <q>
+                                El miedo a la sangre tiende a crear miedo a la
+                                carne
+                            </q>
                             <p>
                                 Silent Hill es la primera entrega de la serie de
                                 videojuegos Silent Hill, una franquicia de gran

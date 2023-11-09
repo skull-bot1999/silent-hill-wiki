@@ -5,8 +5,9 @@ nav {
     flex-direction: row;
     background-color: $colorCarmesi;
     @media (max-width: 768px) {
+        padding: 0;
         justify-content: unset;
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
         width: fit-content;
         height: 100%;
@@ -53,18 +54,6 @@ nav {
             width: 100%;
         }
         &.dropdown {
-            @media (min-width: 768px) {
-                overflow: hidden;
-                .dropdown-content {
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    position: absolute;
-                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-                    z-index: 1;
-                }
-            }
-
             .nav-item {
                 margin: 0;
                 border-radius: 5px;
@@ -81,18 +70,53 @@ nav {
                 }
             }
         }
-        @media (max-width: 768px) {
+    }
+
+    @media (max-width: 768px) {
+        top: 4rem;
+        display: block;
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        .nav-item {
+            background-color: $colorDarkGrey;
+            a {
+                height: 3rem;
+            }
             width: 100%;
             text-align: center;
             padding: 0;
             border: 1px solid black;
+            transition: background-color 0.2s ease;
+            &:hover {
+                transition: background-color 0.2s linear;
+                background-color: $colorCarmesi;
+            }
+            &.dropdown {
+                overflow: hidden;
+                .nav-item {
+                    border-top: none;
+                    border-radius: 0;
+                    background-color: $colorCarmesi;
+                    &:hover {
+                        background-color: darken($colorCarmesi, 10%);
+                        color: red;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black,
+                            0 -1px black;
+                    }
+                }
+                .dropdown-content {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    position: relative;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+            }
         }
-    }
-
-    @media (max-width: 768px) {
-        flex-direction: column;
-        width: 100%;
-        margin: 0;
     }
 }
 
@@ -103,8 +127,8 @@ button.hamburger {
 @media (max-width: 768px) {
     button.hamburger {
         display: block;
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 4rem;
         color: $colorCarmesi;
         padding: 0.5rem;
         transition: color 0.2s ease;
