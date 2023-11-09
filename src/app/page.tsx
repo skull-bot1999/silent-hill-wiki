@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { TitleQuote } from "@/assets";
 import { SubscribeForm } from "@/components/SubscribeForm";
+import { SilentHillPage } from "@/components/SilentHillPage";
 
 export default function Home() {
     return (
@@ -15,7 +16,7 @@ export default function Home() {
                         Aqui encontraras informacion sobre el juego
                     </h2>
                     <div className="grid grid-cols-5 mt-5 gap-5">
-                        <div className="col-span-4 border-[1px] p-5 border-red-700 flex flex-col items-center">
+                        <div className="col-span-4 card">
                             <Image
                                 className="p-6"
                                 priority
@@ -46,18 +47,8 @@ export default function Home() {
                             </p>
                         </div>
                         <div className="col-span-1 flex flex-col items-center">
-                            <div>
-                                <a
-                                    target="_blank"
-                                    href="https://www.konami.com/games/jp/ja/products/silenthill/"
-                                >
-                                    Pagina oficial de Silent Hill
-                                </a>
-                                <img src="https://ipfs.filebase.io/ipfs/QmNYbgzjoC9PChCif92bh2yw679wQvyH89X5b1V7HbkqCT"></img>
-                            </div>
-                            <div>
-                                <SubscribeForm />
-                            </div>
+                            <SilentHillPage />
+                            <SubscribeForm />
                         </div>
                     </div>
                 </div>

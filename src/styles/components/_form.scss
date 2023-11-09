@@ -1,12 +1,45 @@
 .form {
-    padding: 1rem;
+    border: 1px solid red;
+    background-color: $colorBlackTransparent;
+    h3 {
+        text-align: center;
+    }
     form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        input,
-        select {
-            color: black;
+        .input-form {
+            background-color: $colorDarkGrey;
+            border-radius: 10px;
+            padding: 0.5rem;
+            label {
+                color: white;
+                font-size: 12px;
+            }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 10px;
+            transition: background-color 0.2s ease;
+            &:focus,
+            &:hover {
+                background-color: darken($colorCarmesi, 15%);
+                transition: background-color 0.2s ease;
+            }
+            .error {
+                color: red;
+            }
+            input,
+            select {
+                option {
+                    color: white;
+                    background-color: black;
+                }
+                background-color: transparent;
+                padding: 0.2rem;
+                width: 100%;
+                color: white;
+                &:focus {
+                    outline: none;
+                }
+            }
         }
     }
 }
