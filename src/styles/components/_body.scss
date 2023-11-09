@@ -1,6 +1,7 @@
 .body {
     margin: 2rem 15%;
-    border: 1px solid red;
+    border: solid 1px $colorCarmesiTransparent;
+    border-radius: 10px;
     width: 75%;
     color: white;
     background-color: $colorBlackTransparent;
