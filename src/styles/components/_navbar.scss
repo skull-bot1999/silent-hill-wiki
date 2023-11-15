@@ -54,6 +54,17 @@ nav {
             width: 100%;
         }
         &.dropdown {
+            @media (min-width: 768px) {
+                overflow: hidden;
+                .dropdown-content {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    position: absolute;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+            }
             .nav-item {
                 margin: 0;
                 border-radius: 5px;
@@ -74,6 +85,7 @@ nav {
 
     @media (max-width: 768px) {
         top: 4rem;
+        right: 0;
         display: block;
         position: absolute;
         flex-direction: column;

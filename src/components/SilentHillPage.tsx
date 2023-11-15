@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const SilentHillPage = () => {
     return (
-        <div className="card full-image">
+        <div id="silent-hill-page" className="card full-image">
             <a
                 className="text-center"
                 target="_blank"
@@ -14,7 +14,7 @@ export const SilentHillPage = () => {
                     width={200}
                     height={200}
                     alt="silent hill"
-                    src="https://ipfs.filebase.io/ipfs/QmNYbgzjoC9PChCif92bh2yw679wQvyH89X5b1V7HbkqCT"
+                    src="https://www.dropbox.com/scl/fi/nykbdq342z3kgqcr35so5/Silent-Hill-1.jpg?rlkey=h27hkumr6bidytc0i8ae15i8i&dl=0&raw=1"
                 />
             </a>
         </div>

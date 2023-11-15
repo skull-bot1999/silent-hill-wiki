@@ -4,7 +4,7 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: "https",
-                hostname: "ipfs.filebase.io",
+                hostname: "www.dropbox.com",
             },
         ],
     },

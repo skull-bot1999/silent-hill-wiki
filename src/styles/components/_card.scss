@@ -11,4 +11,37 @@
             width: 100%;
         }
     }
+    &.btn {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        overflow: hidden;
+        &:hover {
+            color: $colorLightBlue;
+            background-color: $colorCarmesiTransparent;
+        }
+        img {
+            width: 100%;
+        }
+        span {
+            padding: 1rem;
+        }
+    }
+    &.solid {
+        background-color: $colorDarkGrey;
+        border: none;
+        &:hover {
+            background-color: darken($colorCarmesi, 20%);
+        }
+    }
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+    &:hover {
+        transition: background-color 0.2s ease-in, color 0.2s ease-in;
+    }
+}
+
+@media (max-width: 768px) {
+    #silent-hill-page {
+        margin-top: 1rem;
+    }
 }
