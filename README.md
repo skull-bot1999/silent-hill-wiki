@@ -1,4 +1,4 @@
-# Silent Hill Wiki
+# Silent Hill Wiki (WIP)
 Esta es una wiki de Silent Hill. Está conectada a una base de datos MongoDB a través de Node.js y Express.js en el backend, utilizando API para obtener los datos necesarios. La plataforma ha sido desarrollada utilizando tecnologías modernas como React.js, Next.js y Tailwind, entre otras, para ofrecer una experiencia sólida y eficiente. Es un remake de una pagina que hice en 2018 como proyecto, antes era solo HTML y CSS.
 
 ## Tecnologias utilizadas
